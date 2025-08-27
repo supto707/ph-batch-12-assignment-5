@@ -6,8 +6,9 @@
     <title>Emergency Service Directory</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8f8c4f5c69.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -30,6 +31,7 @@
 
    .banner{
     background: linear-gradient(90.00deg, rgba(1.251827359199524, 49.64006805419922, 34.606834411621094, 1),rgba(0, 103, 71, 1) 50%,rgba(1, 50, 35, 1) 100%);
+    margin: -15px -15px 10px -15px;
    }
 </style>
     
@@ -56,14 +58,14 @@
                     <img src="./assets/coin.png" class="h-[30px] w-[30px]">
                 </div>
                 <button class="btn rounded-[50px] btn-sm bg-[#00A63E] hover:bg-green-600 text-white w-[127px] h-[52px] border-0">
-                    <span id="copy-count">2</span> Copy
+                    <span id="copy-count"></span>Copy
                     
                 </button>
             </div>
         </header>
 
         <div class="flex-grow p-4 ">
-            <div class="banner p-4 text-center text-white py-12  mb-6 shadow-lg">
+            <div class="banner p-4 text-center text-white py-12  mb-6 shadow-lg ">
                 <div class="flex justify-center items-center mb-4">
                     <img src="./assets/logo-dark.png" alt="Bangladesh Seal" class="h-24 w-24">
                 </div>
@@ -78,9 +80,7 @@
                     <div class="card bg-white shadow-md rounded-lg p-6">
                         <div class="flex justify-between items-start mb-4">
                             <div class="bg-red-100 p-2 rounded-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
+                                <img src="/assets/emergency.png" class="h-[40px] w-[40px]">
                             </div>
                             <svg class="heart-icon h-6 w-6 text-gray-400 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -88,15 +88,13 @@
                         </div>
                         <h3 class="font-semibold text-gray-800 text-lg">জাতীয় জরুরি সেবা</h3>
                         <p class="text-gray-500 text-sm mb-4">National Emergency</p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="hotline-number text-3xl font-bold text-red-600">999</span>
+                        <div class="flex flex-col mb-4">
+                            <span class="hotline-number text-3xl font-bold text-black">999</span>
                             <span class="badge badge-lg bg-gray-200 text-gray-600 border-0">All</span>
                         </div>
                         <div class="flex space-x-2">
                             <button class="copy-btn btn btn-sm btn-ghost flex-grow border-gray-300 border">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v4a1 1 0 001 1h5m-5-4h4m-4 4h.01M12 19l-7-7 7-7 7 7-7 7z" />
-                                </svg>
+                                <i class="fa-solid fa-copy"></i>
                                 Copy
                             </button>
                             <button class="call-btn btn btn-sm btn-success flex-grow text-white">
@@ -111,9 +109,7 @@
                     <div class="card bg-white shadow-md rounded-lg p-6">
                         <div class="flex justify-between items-start mb-4">
                             <div class="bg-blue-100 p-2 rounded-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4M7.835 4.697a3.5 3.5 0 000 4.95l.707.707a3.5 3.5 0 004.95 0l.707-.707a3.5 3.5 0 000-4.95l-.707-.707a3.5 3.5 0 00-4.95 0L7.835 4.697zM5.172 6.828a4 4 0 000 5.656L10 17.657l4.828-4.829a4 4 0 00-5.656-5.656L10 7.657l-.543-.544a4 4 0 00-5.656 0z" />
-                                </svg>
+                                <img src="./assets/police.png" class="h-[40px] w-[40px]">
                             </div>
                             <svg class="heart-icon h-6 w-6 text-gray-400 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -121,15 +117,13 @@
                         </div>
                         <h3 class="font-semibold text-gray-800 text-lg">পুলিশ</h3>
                         <p class="text-gray-500 text-sm mb-4">Police</p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="hotline-number text-3xl font-bold text-red-600">999</span>
+                        <div class="flex flex-col mb-4">
+                            <span class="hotline-number text-3xl font-bold text-black">999</span>
                             <span class="badge badge-lg bg-gray-200 text-gray-600 border-0">Police</span>
                         </div>
                         <div class="flex space-x-2">
                             <button class="copy-btn btn btn-sm btn-ghost flex-grow border-gray-300 border">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v4a1 1 0 001 1h5m-5-4h4m-4 4h.01M12 19l-7-7 7-7 7 7-7 7z" />
-                                </svg>
+                               <i class="fa-solid fa-copy"></i>
                                 Copy
                             </button>
                             <button class="call-btn btn btn-sm btn-success flex-grow text-white">
@@ -144,9 +138,7 @@
                     <div class="card bg-white shadow-md rounded-lg p-6">
                         <div class="flex justify-between items-start mb-4">
                             <div class="bg-red-100 p-2 rounded-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                </svg>
+                               <img src="./assets/fire-service.png" class="h-[40px] w-[40px]">
                             </div>
                             <svg class="heart-icon h-6 w-6 text-gray-400 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -154,15 +146,13 @@
                         </div>
                         <h3 class="font-semibold text-gray-800 text-lg">ফায়ার সার্ভিস</h3>
                         <p class="text-gray-500 text-sm mb-4">Fire Service</p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="hotline-number text-3xl font-bold text-red-600">999</span>
+                        <div class="flex flex-col mb-4">
+                            <span class="hotline-number text-3xl font-bold text-black">999</span>
                             <span class="badge badge-lg bg-gray-200 text-gray-600 border-0">Fire</span>
                         </div>
                         <div class="flex space-x-2">
                             <button class="copy-btn btn btn-sm btn-ghost flex-grow border-gray-300 border">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v4a1 1 0 001 1h5m-5-4h4m-4 4h.01M12 19l-7-7 7-7 7 7-7 7z" />
-                                </svg>
+                                <i class="fa-solid fa-copy"></i>
                                 Copy
                             </button>
                             <button class="call-btn btn btn-sm btn-success flex-grow text-white">
@@ -177,9 +167,7 @@
                     <div class="card bg-white shadow-md rounded-lg p-6">
                         <div class="flex justify-between items-start mb-4">
                             <div class="bg-red-100 p-2 rounded-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944c-1.478 0-2.93.31-4.256.907-1.325.596-2.528 1.487-3.626 2.62-1.099 1.134-2.028 2.37-2.784 3.738-1.565 2.766-1.565 6.32 0 9.086.756 1.368 1.685 2.604 2.784 3.738s2.29 2.164 3.626 2.76c1.326.596 2.778.906 4.256.906 1.478 0 2.93-.31 4.256-.907 1.325-.596 2.528-1.487 3.626-2.62 1.099-1.134 2.028-2.37 2.784-3.738s1.565-6.32 0-9.086c-.756-1.368-1.685-2.604-2.784-3.738s-2.29-2.164-3.626-2.76c-1.326-.596-2.778-.906-4.256-.906z" />
-                                </svg>
+                                <img src="./assets/ambulance.png" class="h-[40px] w-[40px]" alt="">
                             </div>
                             <svg class="heart-icon h-6 w-6 text-gray-400 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -187,15 +175,13 @@
                         </div>
                         <h3 class="font-semibold text-gray-800 text-lg">অ্যাম্বুলেন্স</h3>
                         <p class="text-gray-500 text-sm mb-4">Ambulance Service</p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="hotline-number text-3xl font-bold text-red-600">1994-999999</span>
+                        <div class="flex flex-col mb-4">
+                            <span class="hotline-number text-3xl font-bold text-black">1994-999999</span>
                             <span class="badge badge-lg bg-gray-200 text-gray-600 border-0">Health</span>
                         </div>
                         <div class="flex space-x-2">
                             <button class="copy-btn btn btn-sm btn-ghost flex-grow border-gray-300 border">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v4a1 1 0 001 1h5m-5-4h4m-4 4h.01M12 19l-7-7 7-7 7 7-7 7z" />
-                                </svg>
+                                <i class="fa-solid fa-copy"></i>
                                 Copy
                             </button>
                             <button class="call-btn btn btn-sm btn-success flex-grow text-white">
@@ -210,9 +196,7 @@
                     <div class="card bg-white shadow-md rounded-lg p-6">
                         <div class="flex justify-between items-start mb-4">
                             <div class="bg-red-100 p-2 rounded-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                                </svg>
+                               <img src="./assets/emergency.png" class="h-[40px] w-[40px]">
                             </div>
                             <svg class="heart-icon h-6 w-6 text-gray-400 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -220,15 +204,13 @@
                         </div>
                         <h3 class="font-semibold text-gray-800 text-lg">নারী ও শিশু সহায়তা</h3>
                         <p class="text-gray-500 text-sm mb-4">Women & Child Helpline</p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="hotline-number text-3xl font-bold text-red-600">109</span>
+                        <div class="flex flex-col mb-4">
+                            <span class="hotline-number text-3xl font-bold text-black">109</span>
                             <span class="badge badge-lg bg-gray-200 text-gray-600 border-0">Help</span>
                         </div>
                         <div class="flex space-x-2">
                             <button class="copy-btn btn btn-sm btn-ghost flex-grow border-gray-300 border">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v4a1 1 0 001 1h5m-5-4h4m-4 4h.01M12 19l-7-7 7-7 7 7-7 7z" />
-                                </svg>
+                               <i class="fa-solid fa-copy"></i>
                                 Copy
                             </button>
                             <button class="call-btn btn btn-sm btn-success flex-grow text-white">
@@ -243,9 +225,7 @@
                     <div class="card bg-white shadow-md rounded-lg p-6">
                         <div class="flex justify-between items-start mb-4">
                             <div class="bg-red-100 p-2 rounded-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944c-1.478 0-2.93.31-4.256.907-1.325.596-2.528 1.487-3.626 2.62-1.099 1.134-2.028 2.37-2.784 3.738-1.565 2.766-1.565 6.32 0 9.086.756 1.368 1.685 2.604 2.784 3.738s2.29 2.164 3.626 2.76c1.326.596 2.778.906 4.256.906 1.478 0 2.93-.31 4.256-.907 1.325-.596 2.528-1.487 3.626-2.62 1.099-1.134 2.028-2.37 2.784-3.738s1.565-6.32 0-9.086c-.756-1.368-1.685-2.604-2.784-3.738s-2.29-2.164-3.626-2.76c-1.326-.596-2.778-.906-4.256-.906z" />
-                                </svg>
+                                 <img src="./assets/emergency.png" class="h-[40px] w-[40px]">
                             </div>
                             <svg class="heart-icon h-6 w-6 text-gray-400 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -253,15 +233,13 @@
                         </div>
                         <h3 class="font-semibold text-gray-800 text-lg">দুদক</h3>
                         <p class="text-gray-500 text-sm mb-4">Anti-Corruption</p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="hotline-number text-3xl font-bold text-red-600">106</span>
+                        <div class="flex flex-col mb-4">
+                            <span class="hotline-number text-3xl font-bold text-black">106</span>
                             <span class="badge badge-lg bg-gray-200 text-gray-600 border-0">Govt.</span>
                         </div>
                         <div class="flex space-x-2">
                             <button class="copy-btn btn btn-sm btn-ghost flex-grow border-gray-300 border">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v4a1 1 0 001 1h5m-5-4h4m-4 4h.01M12 19l-7-7 7-7 7 7-7 7z" />
-                                </svg>
+                                <i class="fa-solid fa-copy"></i>
                                 Copy
                             </button>
                             <button class="call-btn btn btn-sm btn-success flex-grow text-white">
@@ -276,9 +254,7 @@
                     <div class="card bg-white shadow-md rounded-lg p-6">
                         <div class="flex justify-between items-start mb-4">
                             <div class="bg-red-100 p-2 rounded-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944c-1.478 0-2.93.31-4.256.907-1.325.596-2.528 1.487-3.626 2.62-1.099 1.134-2.028 2.37-2.784 3.738-1.565 2.766-1.565 6.32 0 9.086.756 1.368 1.685 2.604 2.784 3.738s2.29 2.164 3.626 2.76c1.326.596 2.778.906 4.256.906 1.478 0 2.93-.31 4.256-.907 1.325-.596 2.528-1.487 3.626-2.62 1.099-1.134 2.028-2.37 2.784-3.738s1.565-6.32 0-9.086c-.756-1.368-1.685-2.604-2.784-3.738s-2.29-2.164-3.626-2.76c-1.326-.596-2.778-.906-4.256-.906z" />
-                                </svg>
+                                 <img src="./assets/emergency.png" class="h-[40px] w-[40px]">
                             </div>
                             <svg class="heart-icon h-6 w-6 text-gray-400 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -286,15 +262,13 @@
                         </div>
                         <h3 class="font-semibold text-gray-800 text-lg">বিদ্যুৎ বিভ্রাট</h3>
                         <p class="text-gray-500 text-sm mb-4">Electricity Outage</p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="hotline-number text-3xl font-bold text-red-600">16216</span>
+                        <div class="flex flex-col mb-4">
+                            <span class="hotline-number text-3xl font-bold text-black">16216</span>
                             <span class="badge badge-lg bg-gray-200 text-gray-600 border-0">Electricity</span>
                         </div>
                         <div class="flex space-x-2">
                             <button class="copy-btn btn btn-sm btn-ghost flex-grow border-gray-300 border">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v4a1 1 0 001 1h5m-5-4h4m-4 4h.01M12 19l-7-7 7-7 7 7-7 7z" />
-                                </svg>
+                                <i class="fa-solid fa-copy"></i>
                                 Copy
                             </button>
                             <button class="call-btn btn btn-sm btn-success flex-grow text-white">
@@ -310,7 +284,10 @@
                 <div class="col-span-1 bg-white shadow-md rounded-lg p-6 hidden lg:block">
                     <div class="flex justify-between items-center mb-4">
                         <h3 class="font-bold text-xl text-gray-800">Call History</h3>
-                        <button class="clear-history-btn btn btn-sm btn-ghost text-red-500 hover:text-red-700">Clear</button>
+                        <button class="btn rounded-[50px] btn-sm bg-[#00A63E] hover:bg-green-600 text-white w-[127px] h-[52px] border-0">
+                    <span id="clear">Clear</span>
+                    
+                </button>
                     </div>
 
                     <div id="call-history-list" class="space-y-4">
@@ -319,5 +296,6 @@
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
