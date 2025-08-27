@@ -1,7 +1,7 @@
 
 let coins = 100;
 let hearts = 0;
-let copyCount = 2;
+let copyCount = 0;
 let callHistory = [];
 
 
