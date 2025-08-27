@@ -1,24 +1,22 @@
-// Initialize state
+
 let coins = 100;
 let hearts = 0;
-let copyCount = 2; // Starting with 2 as shown in the UI
+let copyCount = 2;
 let callHistory = [];
 
-// DOM Elements
+
 const heartCountElement = document.getElementById('heart-count');
 const coinCountElement = document.getElementById('coin-count');
 const copyCountElement = document.getElementById('copy-count');
 const callHistoryList = document.getElementById('call-history-list');
 const clearButton = document.getElementById('clear');
 
-// Update UI counters
 function updateCounters() {
     heartCountElement.textContent = hearts;
     coinCountElement.textContent = coins;
     copyCountElement.textContent = copyCount;
 }
 
-// Handle favorite button click
 document.querySelectorAll('.heart-icon').forEach(heartIcon => {
     heartIcon.addEventListener('click', function() {
         const isFavorited = this.classList.contains('text-red-500');
@@ -39,23 +37,23 @@ document.querySelectorAll('.heart-icon').forEach(heartIcon => {
     });
 });
 
-// Handle copy button click
+
 document.querySelectorAll('.copy-btn').forEach(copyBtn => {
     copyBtn.addEventListener('click', function() {
         const card = this.closest('.card');
         const number = card.querySelector('.hotline-number').textContent;
         const title = card.querySelector('h3').textContent;
         
-        // Copy to clipboard
+        
         navigator.clipboard.writeText(number).then(() => {
-            // Show alert
+           
             alert(`${title} (${number}) copied to clipboard!`);
             
-            // Increase copy count
+           
             copyCount++;
             updateCounters();
             
-            // Visual feedback
+            
             const originalContent = this.innerHTML;
             this.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
             setTimeout(() => {
@@ -65,36 +63,35 @@ document.querySelectorAll('.copy-btn').forEach(copyBtn => {
     });
 });
 
-// Handle call button click
+
 document.querySelectorAll('.call-btn').forEach(callBtn => {
     callBtn.addEventListener('click', function() {
         const card = this.closest('.card');
         const number = card.querySelector('.hotline-number').textContent;
         const title = card.querySelector('h3').textContent;
         
-        // Check if enough coins
+       
         if (coins < 20) {
             alert('Not enough coins! You need 20 coins to make a call.');
             return;
         }
         
-        // Deduct coins
         coins -= 20;
         
-        // Show alert
+        
         alert(`Calling ${title} at ${number}`);
         
-        // Add to call history
+      
         const time = new Date().toLocaleTimeString();
         callHistory.unshift({ title, number, time });
         
-        // Update UI
+        
         updateCallHistory();
         updateCounters();
     });
 });
 
-// Update Call History
+
 function updateCallHistory() {
     if (callHistory.length === 0) {
         callHistoryList.innerHTML = '<p class="text-gray-500 text-center py-4">No call history</p>';
@@ -112,13 +109,13 @@ function updateCallHistory() {
     `).join('');
 }
 
-// Clear call history
+
 clearButton.addEventListener('click', function() {
     callHistory = [];
     updateCallHistory();
 });
 
-// Initialize the UI
+
 document.addEventListener('DOMContentLoaded', function() {
     updateCounters();
     updateCallHistory();
