@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Service Directory</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    .inter-font{
+        font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+        
+  font-style: normal;
+    }
+
+
+    .hind-font{
+         font-family: "Hind Madurai", sans-serif;
+  
+  font-style: normal;
+  
+    }
+
+
+   .banner{
+    background: linear-gradient(90.00deg, rgba(1.251827359199524, 49.64006805419922, 34.606834411621094, 1),rgba(0, 103, 71, 1) 50%,rgba(1, 50, 35, 1) 100%);
+   }
+</style>
+    
+</head>
+<body class="bg-gray-100 font-sans hind-font ">
+
+    <div class="min-h-screen flex flex-col">
+
+        <header class="bg-white p-4 shadow-md flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="p-2  rounded-full">
+                    <img src="./assets/logo.png" alt="logo" class="bg-[white] h-[50px] w-[50px] rounded-full">
+                        
+                </div>
+                <span class="ml-2 text-3xl mt-[-20px] font-bold text-[#006747]  w-[123px] h-[52px]">Emergency <br> Service</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-1 bg-green-100 w-[123px] h-[52px] rounded-[50px] justify-center ">
+                    <span id="heart-count" class="text-black text-xl font-bold">0</span>
+                    <img src="./assets/heart.png" class="h-[30px] w-[30px]">
+                </div>
+                <div class="flex items-center space-x-1 bg-green-100 w-[123px] h-[52px] rounded-[50px] justify-center">
+                    <span id="coin-count" class="text-black text-xl font-bold">100</span>
+                    <img src="./assets/coin.png" class="h-[30px] w-[30px]">
+                </div>
+                <button class="btn rounded-[50px] btn-sm bg-[#00A63E] hover:bg-green-600 text-white w-[127px] h-[52px] border-0">
+                    <span id="copy-count">2</span> Copy
+                    
+                </button>
+            </div>
+        </header>
+
+        <div class="flex-grow p-4 ">
+            <div class="banner p-4 text-center text-white py-12  mb-6 shadow-lg">
+                <div class="flex justify-center items-center mb-4">
+                    <img src="./assets/logo-dark.png" alt="Bangladesh Seal" class="h-24 w-24">
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-2">জরুরি সেবা ডিরেক্টরি</h2>
+                <p class="text-white font-bold  mx-auto text-sm">Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+
+                <div class="col-span-1 lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <div class="card bg-white shadow-md rounded-lg p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="bg-red-100 p-2 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <svg class="heart-icon h-6 w-6 text-gray-400 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-800 text-lg">জাতীয় জরুরি সেবা</h3>
+                        <p class="text-gray-500 text-sm mb-4">National Emergency</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="hotline-number text-3xl font-bold text-red-600">999</span>
+                            <span class="badge badge-lg bg-gray-200 text-gray-600 border-0">All</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="copy-btn btn btn-sm btn-ghost flex-grow border-gray-300 border">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v4a1 1 0 001 1h5m-5-4h4m-4 4h.01M12 19l-7-7 7-7 7 7-7 7z" />
+                                </svg>
+                                Copy
+                            </button>
+                            <button class="call-btn btn btn-sm btn-success flex-grow text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.147l-1.545.773a11.037 11.037 0 006.105 6.105l.773-1.545a1 1 0 011.147-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white shadow-md rounded-lg p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="bg-blue-100 p-2 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4M7.835 4.697a3.5 3.5 0 000 4.95l.707.707a3.5 3.5 0 004.95 0l.707-.707a3.5 3.5 0 000-4.95l-.707-.707a3.5 3.5 0 00-4.95 0L7.835 4.697zM5.172 6.828a4 4 0 000 5.656L10 17.657l4.828-4.829a4 4 0 00-5.656-5.656L10 7.657l-.543-.544a4 4 0 00-5.656 0z" />
+                                </svg>
+                            </div>
+                            <svg class="heart-icon h-6 w-6 text-gray-400 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-800 text-lg">পুলিশ</h3>
+                        <p class="text-gray-500 text-sm mb-4">Police</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="hotline-number text-3xl font-bold text-red-600">999</span>
+                            <span class="badge badge-lg bg-gray-200 text-gray-600 border-0">Police</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="copy-btn btn btn-sm btn-ghost flex-grow border-gray-300 border">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v4a1 1 0 001 1h5m-5-4h4m-4 4h.01M12 19l-7-7 7-7 7 7-7 7z" />
+                                </svg>
+                                Copy
+                            </button>
+                            <button class="call-btn btn btn-sm btn-success flex-grow text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.147l-1.545.773a11.037 11.037 0 006.105 6.105l.773-1.545a1 1 0 011.147-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-white shadow-md rounded-lg p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="bg-red-100 p-2 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <svg class="heart-icon h-6 w-6 text-gray-400 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-800 text-lg">ফায়ার সার্ভিস</h3>
+                        <p class="text-gray-500 text-sm mb-4">Fire Service</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="hotline-number text-3xl font-bold text-red-600">999</span>
+                            <span class="badge badge-lg bg-gray-200 text-gray-600 border-0">Fire</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="copy-btn btn btn-sm btn-ghost flex-grow border-gray-300 border">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v4a1 1 0 001 1h5m-5-4h4m-4 4h.01M12 19l-7-7 7-7 7 7-7 7z" />
+                                </svg>
+                                Copy
+                            </button>
+                            <button class="call-btn btn btn-sm btn-success flex-grow text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.147l-1.545.773a11.037 11.037 0 006.105 6.105l.773-1.545a1 1 0 011.147-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white shadow-md rounded-lg p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="bg-red-100 p-2 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944c-1.478 0-2.93.31-4.256.907-1.325.596-2.528 1.487-3.626 2.62-1.099 1.134-2.028 2.37-2.784 3.738-1.565 2.766-1.565 6.32 0 9.086.756 1.368 1.685 2.604 2.784 3.738s2.29 2.164 3.626 2.76c1.326.596 2.778.906 4.256.906 1.478 0 2.93-.31 4.256-.907 1.325-.596 2.528-1.487 3.626-2.62 1.099-1.134 2.028-2.37 2.784-3.738s1.565-6.32 0-9.086c-.756-1.368-1.685-2.604-2.784-3.738s-2.29-2.164-3.626-2.76c-1.326-.596-2.778-.906-4.256-.906z" />
+                                </svg>
+                            </div>
+                            <svg class="heart-icon h-6 w-6 text-gray-400 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-800 text-lg">অ্যাম্বুলেন্স</h3>
+                        <p class="text-gray-500 text-sm mb-4">Ambulance Service</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="hotline-number text-3xl font-bold text-red-600">1994-999999</span>
+                            <span class="badge badge-lg bg-gray-200 text-gray-600 border-0">Health</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="copy-btn btn btn-sm btn-ghost flex-grow border-gray-300 border">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v4a1 1 0 001 1h5m-5-4h4m-4 4h.01M12 19l-7-7 7-7 7 7-7 7z" />
+                                </svg>
+                                Copy
+                            </button>
+                            <button class="call-btn btn btn-sm btn-success flex-grow text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.147l-1.545.773a11.037 11.037 0 006.105 6.105l.773-1.545a1 1 0 011.147-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white shadow-md rounded-lg p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="bg-red-100 p-2 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                </svg>
+                            </div>
+                            <svg class="heart-icon h-6 w-6 text-gray-400 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-800 text-lg">নারী ও শিশু সহায়তা</h3>
+                        <p class="text-gray-500 text-sm mb-4">Women & Child Helpline</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="hotline-number text-3xl font-bold text-red-600">109</span>
+                            <span class="badge badge-lg bg-gray-200 text-gray-600 border-0">Help</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="copy-btn btn btn-sm btn-ghost flex-grow border-gray-300 border">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v4a1 1 0 001 1h5m-5-4h4m-4 4h.01M12 19l-7-7 7-7 7 7-7 7z" />
+                                </svg>
+                                Copy
+                            </button>
+                            <button class="call-btn btn btn-sm btn-success flex-grow text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.147l-1.545.773a11.037 11.037 0 006.105 6.105l.773-1.545a1 1 0 011.147-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white shadow-md rounded-lg p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="bg-red-100 p-2 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944c-1.478 0-2.93.31-4.256.907-1.325.596-2.528 1.487-3.626 2.62-1.099 1.134-2.028 2.37-2.784 3.738-1.565 2.766-1.565 6.32 0 9.086.756 1.368 1.685 2.604 2.784 3.738s2.29 2.164 3.626 2.76c1.326.596 2.778.906 4.256.906 1.478 0 2.93-.31 4.256-.907 1.325-.596 2.528-1.487 3.626-2.62 1.099-1.134 2.028-2.37 2.784-3.738s1.565-6.32 0-9.086c-.756-1.368-1.685-2.604-2.784-3.738s-2.29-2.164-3.626-2.76c-1.326-.596-2.778-.906-4.256-.906z" />
+                                </svg>
+                            </div>
+                            <svg class="heart-icon h-6 w-6 text-gray-400 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-800 text-lg">দুদক</h3>
+                        <p class="text-gray-500 text-sm mb-4">Anti-Corruption</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="hotline-number text-3xl font-bold text-red-600">106</span>
+                            <span class="badge badge-lg bg-gray-200 text-gray-600 border-0">Govt.</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="copy-btn btn btn-sm btn-ghost flex-grow border-gray-300 border">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v4a1 1 0 001 1h5m-5-4h4m-4 4h.01M12 19l-7-7 7-7 7 7-7 7z" />
+                                </svg>
+                                Copy
+                            </button>
+                            <button class="call-btn btn btn-sm btn-success flex-grow text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.147l-1.545.773a11.037 11.037 0 006.105 6.105l.773-1.545a1 1 0 011.147-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white shadow-md rounded-lg p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="bg-red-100 p-2 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944c-1.478 0-2.93.31-4.256.907-1.325.596-2.528 1.487-3.626 2.62-1.099 1.134-2.028 2.37-2.784 3.738-1.565 2.766-1.565 6.32 0 9.086.756 1.368 1.685 2.604 2.784 3.738s2.29 2.164 3.626 2.76c1.326.596 2.778.906 4.256.906 1.478 0 2.93-.31 4.256-.907 1.325-.596 2.528-1.487 3.626-2.62 1.099-1.134 2.028-2.37 2.784-3.738s1.565-6.32 0-9.086c-.756-1.368-1.685-2.604-2.784-3.738s-2.29-2.164-3.626-2.76c-1.326-.596-2.778-.906-4.256-.906z" />
+                                </svg>
+                            </div>
+                            <svg class="heart-icon h-6 w-6 text-gray-400 hover:text-red-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-800 text-lg">বিদ্যুৎ বিভ্রাট</h3>
+                        <p class="text-gray-500 text-sm mb-4">Electricity Outage</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="hotline-number text-3xl font-bold text-red-600">16216</span>
+                            <span class="badge badge-lg bg-gray-200 text-gray-600 border-0">Electricity</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="copy-btn btn btn-sm btn-ghost flex-grow border-gray-300 border">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v4a1 1 0 001 1h5m-5-4h4m-4 4h.01M12 19l-7-7 7-7 7 7-7 7z" />
+                                </svg>
+                                Copy
+                            </button>
+                            <button class="call-btn btn btn-sm btn-success flex-grow text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.147l-1.545.773a11.037 11.037 0 006.105 6.105l.773-1.545a1 1 0 011.147-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                Call
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 bg-white shadow-md rounded-lg p-6 hidden lg:block">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-bold text-xl text-gray-800">Call History</h3>
+                        <button class="clear-history-btn btn btn-sm btn-ghost text-red-500 hover:text-red-700">Clear</button>
+                    </div>
+
+                    <div id="call-history-list" class="space-y-4">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
