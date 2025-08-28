@@ -26,6 +26,6 @@ Instead of adding listeners to many child elements, you attach a single listener
 
 ## Difference between preventDefault() and stopPropagation():
 
-# preventDefault() → Stops the default action (e.g., form submission, link navigation).
+### preventDefault() → Stops the default action (e.g., form submission, link navigation).
 
-# stopPropagation() → Stops the event from bubbling up to parent elements.
+### stopPropagation() → Stops the event from bubbling up to parent elements.
